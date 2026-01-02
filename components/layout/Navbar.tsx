@@ -3,6 +3,8 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
+import ThemeToggle from "@/components/theme/ThemeToggle";
+
 const navItems = [
   { label: "Home", href: "/" },
   { label: "About", href: "/about" },
@@ -15,10 +17,10 @@ export default function Navbar() {
 
   console.log("Navbar rendered");
   return (
-    <header className="fixed top-0 z-50 w-full border-b bg-white text-black">
+    <header className="fixed top-0 z-50 w-full border-b ">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/*Logo */}
-        <Link href={"/"} className="text-lg font-bold text-black">
+        <Link href={"/"} className="text-lg font-bold ">
           Tatak<span className="text-primary">.</span>
         </Link>
 
@@ -42,6 +44,7 @@ export default function Navbar() {
             );
           })}
         </ul>
+        <ThemeToggle />
       </nav>
     </header>
   );
