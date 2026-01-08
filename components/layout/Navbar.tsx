@@ -17,7 +17,7 @@ export default function Navbar() {
 
   console.log("Navbar rendered");
   return (
-    <header className="fixed top-0 z-50 w-full border-b ">
+    <header className="fixed top-0 z-50 w-full border-b bg-transparent ">
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/*Logo */}
         <Link href={"/"} className="text-lg font-bold ">
