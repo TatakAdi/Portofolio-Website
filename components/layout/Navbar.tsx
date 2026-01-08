@@ -17,7 +17,10 @@ export default function Navbar() {
 
   console.log("Navbar rendered");
   return (
-    <header className="fixed top-0 z-50 w-full border-b bg-background/80 backdrop-blur ">
+    <header
+      className="fixed top-0 z-50 w-full border-b border-border/40 backdrop-blur-md"
+      style={{ backgroundColor: "var(--background)" }}
+    >
       <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
         {/*Logo */}
         <Link href={"/"} className="text-lg font-bold ">
@@ -40,7 +43,7 @@ export default function Navbar() {
                 >
                   {item.label}
                   <span
-                    className={`absolute left-1/2 -translate-x-1/2 -bottom-2 h-1 rounded-2xl bg-(--foreground) transition-all duration-300 ease-out ${
+                    className={`absolute left-1/2 -translate-x-1/2 -bottom-2 h-1 rounded-2xl bg-foreground transition-all duration-300 ease-out ${
                       isActive ? "w-full" : "w-0 group-hover:w-full"
                     }`}
                   ></span>
