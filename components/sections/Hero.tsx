@@ -17,10 +17,11 @@ export default function Hero() {
           Hi, I'm Tatak 👋
         </h2>
         <p className="text-xl md:text-2xl text-muted-foreground mb-6">
-          Informatics Student & Software development Enthusiast
+          Final-year Informatics Student focused on Web Development
         </p>
         <p className="text-base md:text-lg max-w-xl text-foreground mb-8">
-          I build modern, responsive web applications and currently focus on my
+          I build modern, responsive web applications with a focus on clean UI,
+          maintenable code and real-world usability and currently focus on my
           final projects while preparing for internship opportunities
         </p>
       </div>

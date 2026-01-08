@@ -29,18 +29,26 @@ export default function About() {
           <p className="text-muted-foreground text-sm uppercase tracking-wide">
             Informatics Student
           </p>
-          <p className="text-base leading-relaxed text-foreground">
-            I'm a final year Informatics student with a strong interest in
-            software development. I enjoy building clean, responsive, and
-            user-focused applications using modern technologies.
+          <p className="text-base leading-relaxed text-foreground text-justify">
+            I'm a final year Informatics student with a strong interest in web
+            development, particularly in building clean, responsive, and
+            user-focused applications.
           </p>
-          <p className="text-base leading-relaxed text-foreground">
-            I mainly work with React, Typescript, and Tailwind CSS, and I'm
-            continuosly improving my skills by building real projects.
+          <p className="text-base leading-relaxed text-foreground text-justify">
+            I mainly work with React, Javascript, and Tailwind CSS. In addition,
+            I have hands-on experience with mobile development using Flutter
+            through academic project.
           </p>
-          <p className="text-base leading-relaxed text-foreground">
+          <p className="text-base leading-relaxed text-foreground text-justify">
+            Alongside web and mobile development, I am currently strengthening
+            my fundamentals in machine learning, focusing on understanding core
+            concepts and basic model implementation.
+          </p>
+          <p className="text-base leading-relaxed text-foreground text-justify">
             Currently, I'm focusing on my final project while continuing to
-            improve my skills and preparing for internship opportunities.
+            improve my skills and preparing for internship opportunities where I
+            can contribute, learn from experienced developers, and grow in a
+            profesional environment.
           </p>
         </div>
       </div>
