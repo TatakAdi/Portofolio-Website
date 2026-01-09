@@ -10,6 +10,10 @@ import {
   SiCss3,
   SiTailwindcss,
   SiPython,
+  SiMysql,
+  SiSupabase,
+  SiPrisma,
+  SiPostgresql,
   SiFlutter,
   SiDart,
   SiTypescript,
@@ -26,12 +30,16 @@ const primaryStack = [
   { name: "CSS", icon: SiCss3 },
   { name: "Tailwind CSS", icon: SiTailwindcss },
   { name: "Express.js", icon: SiExpress },
+  { name: "MySQL", icon: SiMysql },
+  { name: "PostgreSQL", icon: SiPostgresql },
   { name: "Python", icon: SiPython },
 ];
 
 const secondaryStack = [
   { name: "Next.js", icon: SiNextdotjs },
   { name: "TypeScript", icon: SiTypescript },
+  { name: "Prisma", icon: SiPrisma },
+  { name: "Supabase", icon: SiSupabase },
   { name: "Flutter", icon: SiFlutter },
   { name: "Dart", icon: SiDart },
 ];

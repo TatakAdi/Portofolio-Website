@@ -3,11 +3,41 @@
     "id": "aura",
     "slug": "aura",
     "title": "AURA",
-    "shortDescription": "A Capstone Project for university course focusing on automated student assingment assessment using AI-based Large Language Models (LLMs)",
+    "shortDescription": "A Capstone Project for university course focusing on automated student assignment assessment using AI-based Large Language Models (LLMs)",
     "category": "Academic",
     "type": "Capstone Project",
-    "Thumbnail": "",
+    "year": 2025,
+    "thumbnail": "",
     "techStack": ["Laravel", "PostgreSQL", "Flutter"],
-    "year": 2025
+    "role": "Mobile Developer",
+    "overview": "AURA is an academic capstone project designed to assist lecturers in evaluating student assignment by leveraging AI-based Large Language Models.",
+    "features": [
+      "Automated assignment evaluation",
+      "Rubric-based scoring assistance",
+      "Lecturer dashboard"
+    ],
+    "challenges": [
+      "Designing prompt strategies for consistent assessment",
+      "Handling subjective grading criteria",
+      "Ensuring scalability for multiple class"
+    ],
+    "solution": [
+      "Prompt engginering with structured rubrics",
+      "separation of evaluation logic and UI layer",
+      "Optimized backend API design"
+    ],
+    "confidential": false
+  },
+  {
+    "id": "cashi",
+    "slug": "cashi",
+    "title": "Cashi Finance App",
+    "shortDescription": "A personal finance application developed as a side project and once for academic purposes, currently undergoing backend architecture refactoring.",
+
+    "category": "Personal",
+    "type": "Mobile & Website Application",
+    "year": 2025,
+    "thumbnail": "",
+    "techStack": ["Flutter", "Supabase", "Prisma", "Express", "PostgreSQL"]
   }
 ]
