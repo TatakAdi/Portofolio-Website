@@ -1,0 +1,13 @@
+[
+  {
+    "id": "aura",
+    "slug": "aura",
+    "title": "AURA",
+    "shortDescription": "A Capstone Project for university course focusing on automated student assingment assessment using AI-based Large Language Models (LLMs)",
+    "category": "Academic",
+    "type": "Capstone Project",
+    "Thumbnail": "",
+    "techStack": ["Laravel", "PostgreSQL", "Flutter"],
+    "year": 2025
+  }
+]
