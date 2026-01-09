@@ -3,24 +3,18 @@
 import Image from "next/image";
 import { Badge } from "../ui/badge";
 import { Card, CardContent } from "../ui/card";
+import { ProjectCardData } from "@/lib/types";
 
 type ProjectCardProps = {
-  title: string;
-  category: string;
-  type: string;
-  thumbnail: string;
-  techStack: string[];
+  project: ProjectCardData;
   onClickAction?: () => void;
 };
 
 export default function ProjectCard({
-  title,
-  category,
-  type,
-  thumbnail,
-  techStack,
+  project,
   onClickAction,
 }: ProjectCardProps) {
+  const { title, category, type, thumbnail, techStack } = project;
   return (
     <Card
       onClick={onClickAction}

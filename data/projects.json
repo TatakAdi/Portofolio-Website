@@ -7,7 +7,7 @@
     "category": "Academic",
     "type": "Capstone Project",
     "year": 2025,
-    "thumbnail": "",
+    "thumbnail": "/projects/AuraCapstoneWeb.png",
     "techStack": ["Laravel", "PostgreSQL", "Flutter"],
     "role": "Mobile Developer",
     "overview": "AURA is an academic capstone project designed to assist lecturers in evaluating student assignment by leveraging AI-based Large Language Models.",
@@ -19,10 +19,10 @@
     "challenges": [
       "Designing prompt strategies for consistent assessment",
       "Handling subjective grading criteria",
-      "Ensuring scalability for multiple class"
+      "Ensuring scalability for multiple classes"
     ],
     "solution": [
-      "Prompt engginering with structured rubrics",
+      "Prompt engineering with structured rubrics",
       "separation of evaluation logic and UI layer",
       "Optimized backend API design"
     ],
@@ -38,6 +38,20 @@
     "type": "Mobile & Website Application",
     "year": 2025,
     "thumbnail": "",
-    "techStack": ["Flutter", "Supabase", "Prisma", "Express", "PostgreSQL"]
+    "techStack": ["Flutter", "Supabase", "Prisma", "Express", "PostgreSQL"],
+    "role": "Fullstack Developer",
+    "statusNote": "Mobile MVP completed. Backend system is currently being redesigned. Web frontend is planned but not yet implemented.",
+    "overview": "Cashi is a personal finance tracking application designed to help users manage daily expenses through a simple and intuitive mobile interface",
+    "features": [
+      "Expenses tracking",
+      "category-based financial summary",
+      "Authentication and user profiles"
+    ],
+    "currentWork": [
+      "Refactoring backend architecture for scalability",
+      "Redesigning API structured",
+      "Planning web frontend implementation"
+    ],
+    "confidential": false
   }
 ]
