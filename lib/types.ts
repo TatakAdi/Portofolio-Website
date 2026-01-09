@@ -1,5 +1,12 @@
 export type ProjectCategory = "Academic" | "Personal" | "Certification";
 
+export type ThumbnailVariant = "mobile" | "web";
+
+export type ProjectThumbnail = {
+  src: string;
+  type: ThumbnailVariant;
+};
+
 export type Project = {
   id: string;
   slug: string;
@@ -10,7 +17,7 @@ export type Project = {
   type: string;
   year: number;
 
-  thumbnail: string;
+  thumbnails: ProjectThumbnail[];
   techStack: string[];
 
   role: string;
@@ -36,7 +43,7 @@ export type ProjectCardData = Pick<
   | "shortDescription"
   | "category"
   | "type"
-  | "thumbnail"
+  | "thumbnails"
   | "techStack"
   | "year"
 >;

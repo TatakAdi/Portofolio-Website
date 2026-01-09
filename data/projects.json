@@ -7,7 +7,16 @@
     "category": "Academic",
     "type": "Capstone Project",
     "year": 2025,
-    "thumbnail": "/projects/AuraCapstoneWeb.png",
+    "thumbnails": [
+      {
+        "src": "/projects/AuraCapstoneWeb.png",
+        "type": "web"
+      },
+      {
+        "src": "/projects/AuraCapstoneMobile2.png",
+        "type": "mobile"
+      }
+    ],
     "techStack": ["Laravel", "PostgreSQL", "Flutter"],
     "role": "Mobile Developer",
     "overview": "AURA is an academic capstone project designed to assist lecturers in evaluating student assignment by leveraging AI-based Large Language Models.",
@@ -37,7 +46,12 @@
     "category": "Personal",
     "type": "Mobile & Website Application",
     "year": 2025,
-    "thumbnail": "",
+    "thumbnails": [
+      {
+        "src": "/projects/CashiProjectMobile.jpg",
+        "type": "mobile"
+      }
+    ],
     "techStack": ["Flutter", "Supabase", "Prisma", "Express", "PostgreSQL"],
     "role": "Fullstack Developer",
     "statusNote": "Mobile MVP completed. Backend system is currently being redesigned. Web frontend is planned but not yet implemented.",

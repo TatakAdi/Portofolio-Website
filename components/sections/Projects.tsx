@@ -15,7 +15,7 @@ export default function Projects({ projects }: ProjectProps) {
       shortDescription,
       category,
       type,
-      thumbnail,
+      thumbnails,
       techStack,
       year,
     }) => ({
@@ -25,7 +25,7 @@ export default function Projects({ projects }: ProjectProps) {
       shortDescription,
       category,
       type,
-      thumbnail,
+      thumbnails,
       techStack,
       year,
     })

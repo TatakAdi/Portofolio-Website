@@ -7,7 +7,7 @@ import ProjectData from "@/data/projects.json";
 import { Project } from "@/lib/types";
 
 export default function Home() {
-  const projects = ProjectData as Project[];
+  const projects = ProjectData as unknown as Project[];
 
   return (
     <div className="min-h-screen  px-6 py-8">
