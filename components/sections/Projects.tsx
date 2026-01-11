@@ -7,9 +7,13 @@ import { useInView } from "@/hooks/useInView";
 
 type ProjectProps = {
   projects: Project[];
+  onProjectClickAction?: (project: Project) => void;
 };
 
-export default function Projects({ projects }: ProjectProps) {
+export default function Projects({
+  projects,
+  onProjectClickAction,
+}: ProjectProps) {
   const { ref, isVisible } = useInView();
 
   const projectCards: ProjectCardData[] = projects.map(
@@ -23,6 +27,7 @@ export default function Projects({ projects }: ProjectProps) {
       thumbnails,
       techStack,
       year,
+      confidential,
     }) => ({
       id,
       slug,
@@ -33,6 +38,7 @@ export default function Projects({ projects }: ProjectProps) {
       thumbnails,
       techStack,
       year,
+      confidential,
     })
   );
 
@@ -60,8 +66,17 @@ export default function Projects({ projects }: ProjectProps) {
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        {projectCards.slice(0, 3).map((project) => (
-          <ProjectCard key={project.id} project={project} />
+        {projectCards.slice(0, 3).map((card) => (
+          <ProjectCard
+            key={card.id}
+            project={card}
+            onClickAction={() => {
+              const fullProject = projects.find((p) => p.id === card.id);
+              if (fullProject && onProjectClickAction) {
+                onProjectClickAction(fullProject);
+              }
+            }}
+          />
         ))}
       </div>
     </section>

@@ -46,4 +46,5 @@ export type ProjectCardData = Pick<
   | "thumbnails"
   | "techStack"
   | "year"
+  | "confidential"
 >;

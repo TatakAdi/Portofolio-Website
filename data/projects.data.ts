@@ -1,0 +1,79 @@
+import type { Project } from "@/lib/types";
+const projects = [
+  {
+    id: "aura",
+    slug: "aura",
+    title: "AURA",
+    shortDescription:
+      "A Capstone Project for university course focusing on automated student assignment assessment using AI-based Large Language Models (LLMs)",
+    category: "Academic",
+    type: "Capstone Project",
+    year: 2025,
+    thumbnails: [
+      {
+        src: "/projects/AuraCapstoneWeb.png",
+        type: "web",
+      },
+      {
+        src: "/projects/AuraCapstoneMobile2.png",
+        type: "mobile",
+      },
+    ],
+    techStack: ["Laravel", "PostgreSQL", "Flutter"],
+    role: "Mobile Developer",
+    overview:
+      "AURA is an academic capstone project designed to assist lecturers in evaluating student assignment by leveraging AI-based Large Language Models.",
+    features: [
+      "Automated assignment evaluation",
+      "Rubric-based scoring assistance",
+      "Lecturer dashboard",
+    ],
+    challenges: [
+      "Designing prompt strategies for consistent assessment",
+      "Handling subjective grading criteria",
+      "Ensuring scalability for multiple classes",
+    ],
+    solution: [
+      "Prompt engineering with structured rubrics",
+      "separation of evaluation logic and UI layer",
+      "Optimized backend API design",
+    ],
+    confidential: false,
+  },
+  {
+    id: "cashi",
+    slug: "cashi",
+    title: "Cashi Finance App",
+    shortDescription:
+      "A personal finance application developed as a side project and once for academic purposes, currently undergoing backend architecture refactoring.",
+
+    category: "Personal",
+    type: "Mobile & Website Application",
+    year: 2025,
+    thumbnails: [
+      {
+        src: "/projects/CashiProjectMobile.jpg",
+        type: "mobile",
+      },
+    ],
+    techStack: ["Flutter", "Supabase", "Prisma", "Express", "PostgreSQL"],
+    role: "Fullstack Developer",
+    statusNote:
+      "Mobile MVP completed. Backend system is currently being redesigned. Web frontend is planned but not yet implemented.",
+    overview:
+      "Cashi is a personal finance tracking application designed to help users manage daily expenses through a simple and intuitive mobile interface",
+    features: [
+      "Expenses tracking",
+      "category-based financial summary",
+      "Authentication and user profiles",
+    ],
+    currentWork: [
+      "Refactoring backend architecture for scalability",
+      "Redesigning API structured",
+      "Planning web frontend implementation",
+    ],
+    confidential: false,
+  },
+] satisfies Project[];
+
+export default projects;

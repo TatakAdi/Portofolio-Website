@@ -24,7 +24,9 @@ export default function ProjectCard({
   return (
     <Card
       onClick={onClickAction}
-      className="group cursor-pointer overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+      className={`group overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-lg ${
+        onClickAction && "cursor-pointer hover:-translate-y-1"
+      }`}
     >
       {/* {Thumbnail} */}
       <div className="relative h-44 w-full overflow-hidden bg-muted">
