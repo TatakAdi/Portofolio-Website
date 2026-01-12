@@ -226,4 +226,85 @@ Web portofolio ini dapat berkembang menjadi:
 
 ---
 
+---
+
+## 🗺️ Milestone & Commit Plan
+
+Dokumen ini menjelaskan rencana pengembangan **jangka pendek** dan **jangka
+menengah** agar proyek tetap terstruktur meskipun tidak disentuh dalam waktu
+lama.
+
+---
+
+### 🟢 Milestone 1 – Finalisasi Konten Awal (Target: 1 Minggu)
+
+**Tujuan:**  
+Melengkapi konten utama agar web portofolio sudah layak dinilai & dibagikan,
+meskipun pengembangan dihentikan sementara sampai TA selesai.
+
+#### Scope Pekerjaan
+
+1. Finalisasi data project:
+   - Lengkapi deskripsi project
+   - Tambahkan tech stack
+   - Tambahkan link repository / demo
+2. Sertifikat:
+   - Kumpulkan semua sertifikat
+   - Implementasi carousel sertifikat
+   - Modal / preview sertifikat (jika perlu)
+
+#### Deliverables
+
+- Data project lengkap & rapi
+- Carousel sertifikat berjalan dengan baik
+- UI tetap konsisten & responsif
+
+#### Commit Plan (Disarankan)
+
+- `feat: finalize project data structure`
+- `content: add completed project data`
+- `feat: certificate carousel component`
+- `ui: adjust about page layout for certificates`
+- `chore: cleanup unused assets and components`
+
+---
+
+### 🟡 Milestone 2 – Maintenance Mode (Target: Feb – Okt)
+
+**Status:** 🔒 _Frozen / Maintenance Only_
+
+#### Aktivitas yang Boleh Dilakukan
+
+- Bug fix kecil (jika ada)
+- Update dependency minor (opsional)
+- Tidak menambah fitur baru
+
+📌 _Catatan:_  
+Tidak ada kewajiban menyentuh proyek ini selama fokus TA.
+
+---
+
+### 🔵 Milestone 3 – Post-TA Enhancement (Target: Setelah Oktober)
+
+**Tujuan:**  
+Melanjutkan pengembangan fitur strategis dengan kondisi mental & waktu yang
+lebih longgar.
+
+#### Kandidat Fitur
+
+- Contact form fungsional
+- SEO & analytics
+- Blog / writing page
+- Admin / CMS (opsional)
+
+---
+
+## 📌 Catatan Pengembangan
+
+- Setiap milestone **harus berakhir dalam kondisi stabil**
+- Jangan meninggalkan TODO besar sebelum freeze
+- Prioritaskan fitur yang **langsung terlihat oleh reviewer**
+
+---
+
 _Last updated: Januari 2026_
