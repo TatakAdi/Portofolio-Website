@@ -6,17 +6,14 @@ type AboutSectionProps = {
   title: string;
   paragraphs: React.ReactNode[];
   blocks?: React.ReactNode[];
-  isVisible: boolean;
 };
 
-function AboutSectionText({
-  title,
-  paragraphs,
-  isVisible,
-  blocks,
-}: AboutSectionProps) {
+function AboutSectionText({ title, paragraphs, blocks }: AboutSectionProps) {
+  const { ref, isVisible } = useInView();
+
   return (
     <section
+      ref={ref}
       className={`space-y-6 transition-all duration-700 ease-out ${
         isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
       }`}
@@ -36,15 +33,10 @@ function AboutSectionText({
 }
 
 export default function AboutPage() {
-  const { ref, isVisible } = useInView();
-
   return (
     <main className="w-full min-h-screen px-6 md:px-12 py-20 flex justify-center">
       <div
-        ref={ref}
-        className={`max-w-5xl w-full space-y-20 transition-all duration-700 ease-out ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
-        }`}
+        className={`max-w-5xl w-full space-y-20 transition-all duration-700 ease-out`}
       >
         <section className="space-y-4">
           <h2 className="text-4xl md:text-5xl font-semibold">About Me</h2>
@@ -72,11 +64,9 @@ export default function AboutPage() {
               projects, independent learning, and structured online programs.
             </>,
           ]}
-          isVisible
         />
         <AboutSectionText
           title="What I Do"
-          isVisible
           paragraphs={[
             <>
               I primarily focus on frontend development, where I work with
@@ -112,12 +102,10 @@ export default function AboutPage() {
               complement modern software development.
             </>,
           ]}
-          isVisible
         />
 
         <AboutSectionText
           title="Experience & Projects"
-          isVisible
           paragraphs={[
             <>
               Throughout my academic journey, I have worked on various projects
@@ -135,7 +123,6 @@ export default function AboutPage() {
         />
         <AboutSectionText
           title="Certifications & Achievements"
-          isVisible
           paragraphs={[
             <>
               To support my learning process, I have completed several online
@@ -156,7 +143,6 @@ export default function AboutPage() {
 
         <AboutSectionText
           title="Currently"
-          isVisible
           paragraphs={[
             <>
               At the moment, I am focusing on completing my final project while
