@@ -1,37 +1,33 @@
 "use client";
 
-import { SiLinkedin, SiGmail, SiGithub } from "react-icons/si";
-import Link from "next/link";
 import { useInView } from "@/hooks/useInView";
+import { SiGmail, SiLinkedin, SiGithub } from "react-icons/si";
+import Link from "next/link";
 
-export default function Contact() {
+export default function ContactPage() {
   const { ref, isVisible } = useInView();
-
   return (
-    <section
-      id="contact"
-      className="w-full py-24 px-6 md:px-6 transition-all duration-700 ease-out"
-    >
+    <main className="min-h-screen flex items-center justify-center px-6">
       <div
         ref={ref}
-        className={`mx-auto max-w-3xl text-center space-y-6 transition-all duration-700 ease-out ${
+        className={`max-w-xl text-center space-y-6 transition-all duration-700 ease-out ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"
         }`}
       >
-        <h2 className="text-3xl md:text-4xl font-bold">Get In Touch</h2>
-        <p className="text-muted-foreground text-base md:text-lg">
-          I’m open for internship opportunities, collaboration, or just a
-          friendly chat. Feel free to reach out.
+        <h2 className="text-4xl font-bold">Get in Touch</h2>
+        <p className="text-muted-foreground">
+          Interested in working together or discussing an opportunity? Feel free
+          to reach out through any of the channels below.
         </p>
 
-        {/* Contact Actions */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 pt-6">
+        <div className="flex flex-col items-center justify-center gap-4 pt-6">
           <a
             href="mailto:tatakadisubagyo@gmail.com"
             className="flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-medium transition hover:bg-accent"
+            aria-label="Send email to Tatak Adi"
           >
             <SiGmail className="h-4 w-4" />
-            Email Me
+            tatakadisubagyo@gmail.com
           </a>
 
           <Link
@@ -39,7 +35,7 @@ export default function Contact() {
             target="_blank"
             className="flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-medium transition hover:bg-accent"
           >
-            <SiGithub className="h-4 w-4" /> Github
+            <SiGithub className="h-4 w-4" /> TatakAdi
           </Link>
           <Link
             href="https://www.linkedin.com/in/tatak-adi-subagyo-4a7b6a27a"
@@ -47,10 +43,10 @@ export default function Contact() {
             className="flex items-center gap-2 rounded-lg border border-border px-5 py-3 text-sm font-medium transition hover:bg-accent"
           >
             <SiLinkedin className="h-4 w-4" />
-            LinkedIn
+            Tatak Adi Subagyo
           </Link>
         </div>
       </div>
-    </section>
+    </main>
   );
 }
