@@ -1,36 +1,229 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Web Portofolio – Catatan Pengembangan Selanjutnya
 
-## Getting Started
+Status saat ini: **MVP (Minimum Viable Product) sudah selesai** ✅
 
-First, run the development server:
+Web portofolio ini sudah memiliki fondasi yang stabil dan layak dipublikasikan.
+Dokumen ini berisi catatan, ide, dan arah pengembangan fitur di masa depan yang
+dapat dikerjakan secara bertahap setelah penyelesaian Tugas Akhir (TA).
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎯 Tujuan Pengembangan
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Menjadikan web portofolio lebih **informatif, interaktif, dan profesional**
+- Memudahkan recruiter / reviewer memahami:
+  - Skill
+  - Pengalaman
+  - Proyek yang pernah dikerjakan
+- Menjadikan proyek ini sebagai **showcase teknis & playground eksperimen**
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🧩 Lingkup MVP Saat Ini (Baseline)
 
-To learn more about Next.js, take a look at the following resources:
+Fitur yang sudah ada dan **tidak perlu diubah secara fundamental**:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Website portofolio responsif (desktop & mobile)
+- Halaman utama:
+  - Home
+  - About
+  - Projects
+  - Contact
+- UI modern & bersih
+- Data masih bersifat statis / lokal
+- Siap dipublish dan dibagikan
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+> MVP ini adalah **fondasi utama** — semua pengembangan selanjutnya dibangun di
+> atas ini.
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 🥇 PRIORITAS 1 – Paling Penting (High Impact, Low Risk)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Fitur di bawah ini **paling direkomendasikan untuk dikerjakan pertama**.
+
+### 1. Manajemen Data Project yang Lebih Rapi
+
+- Ubah data project menjadi terstruktur (JSON / CMS / database)
+- Atribut project:
+  - Judul
+  - Deskripsi
+  - Tech stack
+  - Gambar / screenshot
+  - Link demo & repository
+- Tambahan:
+  - Halaman detail project (`/projects/[slug]`)
+  - Filter berdasarkan kategori / teknologi
+
+📌 _Alasan:_ Ini adalah inti dari web portofolio.
+
+---
+
+### 2. Penyempurnaan Halaman About
+
+- Timeline pengalaman:
+  - Pendidikan
+  - Studi independen
+  - Internship / freelance
+- Visualisasi skill:
+  - Tech stack badges
+  - Skill progress
+- Showcase sertifikat:
+  - Carousel / slider
+  - Modal preview
+
+📌 _Alasan:_ Recruiter biasanya buka halaman ini setelah Home.
+
+---
+
+### 3. Penyempurnaan UI & Animasi
+
+- Animasi ringan per section
+- Hover & micro-interaction
+- Page transition sederhana
+
+📌 _Alasan:_ Meningkatkan kesan profesional tanpa over-engineering.
+
+---
+
+## 🥈 PRIORITAS 2 – Interaksi & Kredibilitas
+
+### 4. Contact Form yang Benar-Benar Berfungsi
+
+- Validasi input
+- Kirim email langsung ke owner
+- Feedback sukses / error
+
+Opsi teknologi:
+
+- EmailJS
+- Resend
+- Custom API endpoint
+
+---
+
+### 5. Integrasi Profesional
+
+- Link GitHub & LinkedIn yang lebih menonjol
+- Download CV / Resume (PDF)
+- (Opsional) Preview aktivitas GitHub
+
+---
+
+## 🥉 PRIORITAS 3 – Admin & Konten (Opsional)
+
+> Fitur ini **tidak wajib**, hanya jika ingin lebih dinamis.
+
+### 6. Admin Dashboard
+
+- Login admin
+- CRUD project
+- Proteksi route
+
+Opsi auth:
+
+- Supabase Auth
+- JWT
+- Custom backend
+
+---
+
+### 7. Headless CMS (Alternatif Admin)
+
+- Sanity / Contentful / Strapi
+- Update konten tanpa edit kode
+
+📌 _Lebih cocok jika ingin fokus ke konten, bukan backend._
+
+---
+
+## 📊 PRIORITAS 4 – SEO & Insight
+
+### 8. Optimasi SEO
+
+- Meta tag per halaman
+- Open Graph & Twitter Card
+- Sitemap & robots.txt
+- Structured data (JSON-LD)
+
+---
+
+### 9. Analytics
+
+- Tracking page view
+- Tracking klik project
+- Tracking submit contact
+
+Opsi:
+
+- Google Analytics
+- Plausible
+- Umami
+
+---
+
+## 🌍 PRIORITAS 5 – Nice to Have
+
+### 10. Multi Bahasa
+
+- Bahasa Indonesia & Inggris
+- i18n routing
+- Content translation
+
+---
+
+### 11. Blog / Writing Page
+
+- Catatan teknis
+- Pembelajaran TA
+- Artikel pengembangan diri
+- Markdown-based content
+
+---
+
+### 12. Performance & Accessibility
+
+- Optimasi Lighthouse
+- Lazy loading
+- Keyboard navigation
+- Aksesibilitas dasar (ARIA)
+
+---
+
+## 🧪 Preview Teknologi yang Digunakan
+
+Teknologi saat ini & yang berpotensi digunakan ke depan:
+
+- **Framework:** Next.js (App Router)
+- **Language:** TypeScript
+- **UI:** shadcn/ui + Tailwind CSS
+- **Animation:** Framer Motion
+- **Auth (opsional):** Supabase Auth / JWT
+- **CMS (opsional):** Sanity / Contentful
+- **Email:** EmailJS / Resend
+- **Analytics:** Plausible / Google Analytics
+- **Deployment:** Vercel
+
+---
+
+## 🧠 Visi Jangka Panjang
+
+Web portofolio ini dapat berkembang menjadi:
+
+- Personal branding website
+- Technical blog
+- Showcase profesional untuk recruiter
+- Tempat eksperimen teknologi baru
+
+---
+
+## 📌 Prinsip Pengembangan
+
+- MVP tetap **ringan & stabil**
+- Fokus pada **value**, bukan sekadar fitur
+- Hindari over-engineering
+- Anggap proyek ini sebagai **living product**
+
+---
+
+_Last updated: Januari 2026_
