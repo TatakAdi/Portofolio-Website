@@ -1,6 +1,7 @@
 "use client";
 
 import { Project, ProjectCardData } from "@/lib/types";
+import { mapProjectsToCardData } from "@/lib/project.mapper";
 import ProjectCard from "@/components/project/ProjectCard";
 import Link from "next/link";
 import { useInView } from "@/hooks/useInView";
@@ -16,31 +17,12 @@ export default function Projects({
 }: ProjectProps) {
   const { ref, isVisible } = useInView();
 
-  const projectCards: ProjectCardData[] = projects.map(
-    ({
-      id,
-      slug,
-      title,
-      shortDescription,
-      category,
-      type,
-      thumbnails,
-      techStack,
-      year,
-      confidential,
-    }) => ({
-      id,
-      slug,
-      title,
-      shortDescription,
-      category,
-      type,
-      thumbnails,
-      techStack,
-      year,
-      confidential,
-    })
+  const featuredProjects = projects.filter(
+    (p) =>
+      !p.confidential &&
+      (p.stage === "Production Ready" || p.stage === "MVP Ready")
   );
+  const projectCards = mapProjectsToCardData(featuredProjects);
 
   return (
     <section
@@ -55,11 +37,15 @@ export default function Projects({
         <h2 className="text-2xl font-bold">Projects</h2>
         <Link
           href="/projects"
-          className="text-sm text-muted-foreground hover:underline"
+          className="text-sm text-muted-foreground hover:underline hover:text-foreground"
         >
           View All
         </Link>
       </div>
+      <p className="max-2-xl text-muted-foreground">
+        Selected production-ready and MVP projects showcasing my experience in
+        backend, mobile, and web development.
+      </p>
       <div
         ref={ref}
         className={`grid gap-6 sm:grid-cols-2 lg:grid-cols-3 transition-all duration-700 ease-out ${

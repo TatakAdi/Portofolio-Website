@@ -7,6 +7,18 @@ export type ProjectThumbnail = {
   type: ThumbnailVariant;
 };
 
+export type ProjectStage =
+  | "Production Ready"
+  | "MVP Ready"
+  | "Experimental"
+  | "Learning";
+
+export type ProjectCompletionReason =
+  | "Production"
+  | "Academic Scope"
+  | "Architecture Refactor"
+  | "Learning Objective";
+
 export type Project = {
   id: string;
   slug: string;
@@ -14,8 +26,10 @@ export type Project = {
   shortDescription: string;
 
   category: ProjectCategory;
+  stage: ProjectStage;
   type: string;
   year: number;
+  completionReason?: ProjectCompletionReason;
 
   thumbnails: ProjectThumbnail[];
   techStack: string[];
@@ -42,6 +56,7 @@ export type ProjectCardData = Pick<
   | "title"
   | "shortDescription"
   | "category"
+  | "stage"
   | "type"
   | "thumbnails"
   | "techStack"
