@@ -121,25 +121,6 @@ export default function AboutPage() {
             </>,
           ]}
         />
-        <AboutSectionText
-          title="Certifications & Achievements"
-          paragraphs={[
-            <>
-              To support my learning process, I have completed several online
-              courses and certification, including programs from Dicoding. These
-              certification reflect my commitment to developing practical skills
-              and gaining industry-relevant knowledge beyond the classroom.
-            </>,
-          ]}
-          blocks={[
-            <div
-              key="certificate-carousel"
-              className="border border-dashed border-border rounded-xl p-6 text-center text-muted-foreground"
-            >
-              Certificate carousel will be displayed here
-            </div>,
-          ]}
-        />
 
         <AboutSectionText
           title="Currently"
