@@ -63,3 +63,14 @@ export type ProjectCardData = Pick<
   | "year"
   | "confidential"
 >;
+
+export type Certificate = {
+  id: string;
+  slug: string;
+  title: string;
+  platform: string;
+  year: number;
+  image: string;
+  verifyUrl?: string;
+  isHighlighted?: boolean;
+};
